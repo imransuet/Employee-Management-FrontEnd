@@ -6,7 +6,7 @@ import ListEmployeeComponent from './component/ListEmployeeComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './component/About';
 import CreateEmployee from './component/CreateEmployee';
-import UpdateEmployeeComponent from './component/UpdateEmployeeComponent';
+import viewEmployeeComponent from './component/viewEmployeeComponent';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
               <Route path="/"  exact component={ListEmployeeComponent}></Route>
               <Route path="/employees"  component={ListEmployeeComponent} ></Route>
               <Route path="/add-employee/:id"  component={CreateEmployee} ></Route>
+              <Route path="/view-employee/:id"  component={viewEmployeeComponent} ></Route>
               <Route path="/about"  component={About} ></Route>
              
 
